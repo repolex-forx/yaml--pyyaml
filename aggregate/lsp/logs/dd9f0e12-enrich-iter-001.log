@@ -1,0 +1,25 @@
+[2026-09-18T10:08:23Z] === ENRICH ITERATION 1 START | repo=yaml/pyyaml sha=dd9f0e12 ===
+[2026-09-18T10:08:23Z] [iter=1] PHASE START: enrich repo=yaml/pyyaml sha=dd9f0e12 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/dd9f0e12-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/dd9f0e1236775dcce682c91823e009556ce2a271.nq.gz
+[2026-09-18T10:08:23Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-09-18T10:08:28Z] [iter=1] AST store loaded triples=404645 load_secs=5 mem_mb=610 MB
+[2026-09-18T10:08:28Z] [iter=1] Step 2: Finding LSP targets mem_mb=610 MB
+[2026-09-18T10:08:29Z] [iter=1] LSP targets found call_sites=3045 imports=171 extends=142 implements=0 secs=1
+[2026-09-18T10:08:30Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=610 MB
+[2026-09-18T10:08:32Z] [iter=1] Position index built positions=28083 nodes_with_types=35584 secs=2 mem_mb=610 MB
+[2026-09-18T10:08:32Z] [iter=1] Step 3: Starting LSP resolution mem_mb=610 MB already_completed_types=[] already_completed_files=0
+[2026-09-18T10:08:32Z] [iter=1] Resolving target type target_type=call_site count=3045
+[2026-09-18T10:09:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.7 files_done=1 resolved=1 errors=193 current=tests/legacy_tests/test_constructor.py
+[2026-09-18T10:09:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.4 files_done=3 resolved=151 errors=464 current=tests/legacy_tests/test_representer.py
+[2026-09-18T10:11:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.8 files_done=6 resolved=264 errors=969 current=tests/legacy_tests/test_appliance.py
+[2026-09-18T10:11:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.5 files_done=9 resolved=401 errors=1219 current=tests/legacy_tests/test_schema.py
+[2026-09-18T10:12:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.1 files_done=15 resolved=626 errors=1439 current=tests/legacy_tests/test_input_output.py
+[2026-09-18T10:13:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.8 files_done=25 resolved=916 errors=1661 current=lib/yaml/loader.py
+[2026-09-18T10:13:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.3 files_done=37 resolved=1024 errors=1848 current=tests/legacy_tests/test_build_ext.py
+[2026-09-18T10:13:48Z] [iter=1] Target type resolved target_type=call_site resolved=1115 errors=1879 secs=316 mem_mb=610 MB
+[2026-09-18T10:13:48Z] [iter=1] Resolving target type target_type=import_statement count=171
+[2026-09-18T10:13:50Z] [iter=1] Target type resolved target_type=import_statement resolved=169 errors=0 secs=2 mem_mb=610 MB
+[2026-09-18T10:13:50Z] [iter=1] Resolving target type target_type=extends_clause count=142
+[2026-09-18T10:13:52Z] [iter=1] Target type resolved target_type=extends_clause resolved=142 errors=0 secs=2 mem_mb=610 MB
+[2026-09-18T10:13:55Z] [iter=1] Step 5: Writing final enrichment file triples=28058
+[2026-09-18T10:13:56Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/dd9f0e1236775dcce682c91823e009556ce2a271.nq.gz size_kb=527
+[2026-09-18T10:13:56Z] [iter=1] PHASE END: enrich elapsed_s=333 elapsed_min=5.5 total_triples=28058
