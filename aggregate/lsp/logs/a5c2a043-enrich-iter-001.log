@@ -1,0 +1,31 @@
+[2026-09-19T07:58:27Z] === ENRICH ITERATION 1 START | repo=yaml/pyyaml sha=a5c2a043 ===
+[2026-09-19T07:58:27Z] [iter=1] PHASE START: enrich repo=yaml/pyyaml sha=a5c2a043 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/a5c2a043-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/a5c2a043a26a6bf2787870eec9006b96ba6bca91.nq.gz
+[2026-09-19T07:58:27Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-09-19T07:58:33Z] [iter=1] AST store loaded triples=723794 load_secs=6 mem_mb=774 MB
+[2026-09-19T07:58:33Z] [iter=1] Step 2: Finding LSP targets mem_mb=774 MB
+[2026-09-19T07:58:35Z] [iter=1] LSP targets found call_sites=5465 imports=18 extends=104 implements=0 secs=2
+[2026-09-19T07:58:37Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=774 MB
+[2026-09-19T07:58:40Z] [iter=1] Position index built positions=50017 nodes_with_types=63401 secs=4 mem_mb=774 MB
+[2026-09-19T07:58:40Z] [iter=1] Step 3: Starting LSP resolution mem_mb=774 MB already_completed_types=[] already_completed_files=0
+[2026-09-19T07:58:40Z] [iter=1] Resolving target type target_type=call_site count=5465
+[2026-09-19T07:59:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.6 files_done=5 resolved=132 errors=74 current=lib/yaml/emitter.py
+[2026-09-19T07:59:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.5 files_done=6 resolved=266 errors=233 current=lib/yaml/constructor.py
+[2026-09-19T08:00:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.1 files_done=7 resolved=367 errors=343 current=tests/lib/test_structure.py
+[2026-09-19T08:01:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.0 files_done=9 resolved=526 errors=522 current=tests/lib3/test_input_output.py
+[2026-09-19T08:02:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.2 files_done=13 resolved=793 errors=754 current=tests/lib3/test_emitter.py
+[2026-09-19T08:03:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.1 files_done=20 resolved=1127 errors=935 current=tests/lib3/test_resolver.py
+[2026-09-19T08:04:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.4 files_done=23 resolved=1339 errors=1194 current=examples/yaml-highlight/yaml_hl.py
+[2026-09-19T08:05:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.2 files_done=27 resolved=1442 errors=1336 current=lib3/yaml/resolver.py
+[2026-09-19T08:06:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.4 files_done=33 resolved=1553 errors=1587 current=tests/lib/test_resolver.py
+[2026-09-19T08:07:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.3 files_done=36 resolved=1688 errors=1751 current=tests/lib/test_mark.py
+[2026-09-19T08:08:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.9 files_done=42 resolved=1852 errors=1870 current=tests/lib3/test_sort_keys.py
+[2026-09-19T08:09:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.7 files_done=50 resolved=2018 errors=2021 current=tests/lib3/test_structure.py
+[2026-09-19T08:09:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.4 files_done=60 resolved=2182 errors=2141 current=tests/lib/test_build.py
+[2026-09-19T08:10:00Z] [iter=1] Target type resolved target_type=call_site resolved=2283 errors=2175 secs=679 mem_mb=774 MB
+[2026-09-19T08:10:00Z] [iter=1] Resolving target type target_type=import_statement count=18
+[2026-09-19T08:10:01Z] [iter=1] Target type resolved target_type=import_statement resolved=18 errors=0 secs=1 mem_mb=774 MB
+[2026-09-19T08:10:01Z] [iter=1] Resolving target type target_type=extends_clause count=104
+[2026-09-19T08:10:02Z] [iter=1] Target type resolved target_type=extends_clause resolved=104 errors=0 secs=1 mem_mb=774 MB
+[2026-09-19T08:10:06Z] [iter=1] Step 5: Writing final enrichment file triples=44297
+[2026-09-19T08:10:07Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/a5c2a043a26a6bf2787870eec9006b96ba6bca91.nq.gz size_kb=820
+[2026-09-19T08:10:07Z] [iter=1] PHASE END: enrich elapsed_s=700 elapsed_min=11.7 total_triples=44297
