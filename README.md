@@ -54,6 +54,8 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 │   │   │   └── chunk-001.nq.gz
 │   │   ├── 5bda41909a4d93062bacaf48df599dbf0cb4cf1e
 │   │   │   └── chunk-001.nq.gz
+│   │   ├── 69b025a9f32fd864ed2096a444a718b7492eb892
+│   │   │   └── chunk-001.nq.gz
 │   │   ├── 8cdff2c80573b8be8e8ad28929264a913a63aa33
 │   │   │   └── chunk-001.nq.gz
 │   │   ├── b79e34b37e676371a6a104970a8a944fb514b679
@@ -73,6 +75,7 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 │   │   ├── 539928ea80aa4b24b24ab4cb84805aa3c0d444c8.nq.gz
 │   │   ├── 58d0cb7ee09954c67fabfbd714c5673b03e7a9e1.nq.gz
 │   │   ├── 5bda41909a4d93062bacaf48df599dbf0cb4cf1e.nq.gz
+│   │   ├── 69b025a9f32fd864ed2096a444a718b7492eb892.nq.gz
 │   │   ├── 8cdff2c80573b8be8e8ad28929264a913a63aa33.nq.gz
 │   │   ├── b79e34b37e676371a6a104970a8a944fb514b679.nq.gz
 │   │   ├── c42fa3bff1eabdb64763bb1526d9ea1ccb708479.nq.gz
@@ -94,6 +97,8 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 │       ├── 58d0cb7ee09954c67fabfbd714c5673b03e7a9e1
 │       │   └── chunk-001.nq.gz
 │       ├── 5bda41909a4d93062bacaf48df599dbf0cb4cf1e
+│       │   └── chunk-001.nq.gz
+│       ├── 69b025a9f32fd864ed2096a444a718b7492eb892
 │       │   └── chunk-001.nq.gz
 │       ├── 8cdff2c80573b8be8e8ad28929264a913a63aa33
 │       │   └── chunk-001.nq.gz
@@ -228,6 +233,7 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
     ├── 28a6cf13f70296ae8b453c96bc190cafeebfa5a7.nq.gz
     ├── 28edc3c6df3aa6dcf3ac106b09c112377d879bc8.nq.gz
     ├── 2905b0d9d093ee5a3c048c2d9b630be9c250b639.nq.gz
+    ├── 292d0aca98c439399d39e5880a1c5f91662d149f.nq.gz
     ├── 29326dbb2bd6f73ddf4077c503f156c7cea4fcf1.nq.gz
     ├── 2a4f50d9846a5761ca7f5cb3802f5b8c3fbb78d3.nq.gz
     ├── 2a5df00dfa5c8266a559d971b9f86a9f54b4b0e8.nq.gz
@@ -262,13 +268,9 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
     ├── 36d6519b6ba0348c5bd4b426eba1b1d726e1862c.nq.gz
     ├── 3732a06a34aac540bcf31b7d0e700eb88bfe38ff.nq.gz
     ├── 37613f5b52c74537bb1e2e1cd7c95bcb97630bf6.nq.gz
-    ├── 3805daf01d44d204a9d04406fabd21953c256b60.nq.gz
-    ├── 3807d57da1bc26afec1a20375fc47c9892c8737a.nq.gz
-    ├── 384c62f0d0b44fbc2236d9aafe52624f17933e27.nq.gz
-    ├── 3979e1f79349a6cbd3f7b3bff13ef7dcf49ed19f.nq.gz
-    └── 399eb177b6e6d1ee1e727f8a7d426dd146c6812b.nq.gz
+    └── 3805daf01d44d204a9d04406fabd21953c256b60.nq.gz
 
-32 directories, 200 files
+34 directories, 200 files
 ```
 
 | Directory | What it contains |
