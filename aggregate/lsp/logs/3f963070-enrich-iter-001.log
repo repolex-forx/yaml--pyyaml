@@ -1,0 +1,32 @@
+[2026-09-19T19:32:27Z] === ENRICH ITERATION 1 START | repo=yaml/pyyaml sha=3f963070 ===
+[2026-09-19T19:32:27Z] [iter=1] PHASE START: enrich repo=yaml/pyyaml sha=3f963070 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/3f963070-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/3f96307018244fab5a5c4805626dc7d0b255f591.nq.gz
+[2026-09-19T19:32:27Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-09-19T19:32:34Z] [iter=1] AST store loaded triples=740853 load_secs=7 mem_mb=774 MB
+[2026-09-19T19:32:34Z] [iter=1] Step 2: Finding LSP targets mem_mb=774 MB
+[2026-09-19T19:32:36Z] [iter=1] LSP targets found call_sites=5607 imports=46 extends=159 implements=0 secs=2
+[2026-09-19T19:32:38Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=774 MB
+[2026-09-19T19:32:42Z] [iter=1] Position index built positions=51187 nodes_with_types=64920 secs=4 mem_mb=774 MB
+[2026-09-19T19:32:42Z] [iter=1] Step 3: Starting LSP resolution mem_mb=774 MB already_completed_types=[] already_completed_files=0
+[2026-09-19T19:32:42Z] [iter=1] Resolving target type target_type=call_site count=5607
+[2026-09-19T19:33:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.9 files_done=1 resolved=98 errors=119 current=tests/lib3/test_constructor.py
+[2026-09-19T19:34:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.9 files_done=3 resolved=244 errors=300 current=lib3/yaml/emitter.py
+[2026-09-19T19:35:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.1 files_done=4 resolved=326 errors=544 current=lib/yaml/representer.py
+[2026-09-19T19:36:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.4 files_done=8 resolved=596 errors=795 current=tests/lib3/test_errors.py
+[2026-09-19T19:37:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.2 files_done=13 resolved=876 errors=940 current=lib/yaml/constructor.py
+[2026-09-19T19:38:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.8 files_done=14 resolved=983 errors=1057 current=lib3/yaml/reader.py
+[2026-09-19T19:39:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.8 files_done=16 resolved=1133 errors=1237 current=lib/yaml/serializer.py
+[2026-09-19T19:40:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.1 files_done=21 resolved=1228 errors=1510 current=tests/lib3/test_tokens.py
+[2026-09-19T19:41:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.8 files_done=24 resolved=1303 errors=1638 current=tests/lib/test_structure.py
+[2026-09-19T19:41:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.3 files_done=32 resolved=1635 errors=1726 current=tests/lib/test_sort_keys.py
+[2026-09-19T19:42:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.1 files_done=39 resolved=1847 errors=1869 current=examples/pygments-lexer/yaml.py
+[2026-09-19T19:43:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.6 files_done=45 resolved=2006 errors=1962 current=lib/yaml/resolver.py
+[2026-09-19T19:43:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.2 files_done=52 resolved=2132 errors=2083 current=lib3/yaml/representer.py
+[2026-09-19T19:44:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.7 files_done=60 resolved=2218 errors=2180 current=lib3/yaml/events.py
+[2026-09-19T19:44:26Z] [iter=1] Target type resolved target_type=call_site resolved=2354 errors=2227 secs=704 mem_mb=774 MB
+[2026-09-19T19:44:26Z] [iter=1] Resolving target type target_type=import_statement count=46
+[2026-09-19T19:44:28Z] [iter=1] Target type resolved target_type=import_statement resolved=46 errors=0 secs=2 mem_mb=774 MB
+[2026-09-19T19:44:28Z] [iter=1] Resolving target type target_type=extends_clause count=159
+[2026-09-19T19:44:30Z] [iter=1] Target type resolved target_type=extends_clause resolved=159 errors=0 secs=2 mem_mb=774 MB
+[2026-09-19T19:44:34Z] [iter=1] Step 5: Writing final enrichment file triples=45942
+[2026-09-19T19:44:35Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/3f96307018244fab5a5c4805626dc7d0b255f591.nq.gz size_kb=858
+[2026-09-19T19:44:35Z] [iter=1] PHASE END: enrich elapsed_s=728 elapsed_min=12.1 total_triples=45942
