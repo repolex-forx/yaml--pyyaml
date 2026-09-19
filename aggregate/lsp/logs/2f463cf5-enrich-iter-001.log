@@ -1,0 +1,31 @@
+[2026-09-19T06:27:08Z] === ENRICH ITERATION 1 START | repo=yaml/pyyaml sha=2f463cf5 ===
+[2026-09-19T06:27:08Z] [iter=1] PHASE START: enrich repo=yaml/pyyaml sha=2f463cf5 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/2f463cf5-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/2f463cf5b0e98a52bc20e348d1e69761bf263b86.nq.gz
+[2026-09-19T06:27:08Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-09-19T06:27:20Z] [iter=1] AST store loaded triples=734079 load_secs=12 mem_mb=774 MB
+[2026-09-19T06:27:20Z] [iter=1] Step 2: Finding LSP targets mem_mb=774 MB
+[2026-09-19T06:27:22Z] [iter=1] LSP targets found call_sites=5547 imports=43 extends=134 implements=0 secs=2
+[2026-09-19T06:27:23Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=774 MB
+[2026-09-19T06:27:26Z] [iter=1] Position index built positions=50708 nodes_with_types=64302 secs=3 mem_mb=774 MB
+[2026-09-19T06:27:26Z] [iter=1] Step 3: Starting LSP resolution mem_mb=774 MB already_completed_types=[] already_completed_files=0
+[2026-09-19T06:27:26Z] [iter=1] Resolving target type target_type=call_site count=5547
+[2026-09-19T06:27:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.8 files_done=1 resolved=102 errors=112 current=tests/lib/test_input_output.py
+[2026-09-19T06:28:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.5 files_done=3 resolved=268 errors=285 current=lib3/yaml/parser.py
+[2026-09-19T06:29:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.2 files_done=4 resolved=269 errors=478 current=tests/lib3/test_recursive.py
+[2026-09-19T06:29:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.8 files_done=8 resolved=446 errors=611 current=lib/yaml/scanner.py
+[2026-09-19T06:30:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.5 files_done=9 resolved=522 errors=779 current=lib/yaml/emitter.py
+[2026-09-19T06:31:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.1 files_done=10 resolved=656 errors=938 current=tests/lib/test_yaml_ext.py
+[2026-09-19T06:31:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.7 files_done=14 resolved=924 errors=1080 current=lib3/yaml/serializer.py
+[2026-09-19T06:33:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.0 files_done=21 resolved=1343 errors=1422 current=lib3/yaml/representer.py
+[2026-09-19T06:33:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.5 files_done=25 resolved=1469 errors=1549 current=lib/yaml/composer.py
+[2026-09-19T06:34:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.2 files_done=28 resolved=1523 errors=1720 current=examples/pygments-lexer/yaml.py
+[2026-09-19T06:34:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.8 files_done=33 resolved=1619 errors=1871 current=tests/lib/test_structure.py
+[2026-09-19T06:35:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.6 files_done=50 resolved=2061 errors=2049 current=tests/lib3/test_resolver.py
+[2026-09-19T06:36:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.1 files_done=63 resolved=2237 errors=2182 current=tests/lib3/test_multi_constructor.py
+[2026-09-19T06:36:21Z] [iter=1] Target type resolved target_type=call_site resolved=2319 errors=2203 secs=535 mem_mb=774 MB
+[2026-09-19T06:36:21Z] [iter=1] Resolving target type target_type=import_statement count=43
+[2026-09-19T06:36:22Z] [iter=1] Target type resolved target_type=import_statement resolved=43 errors=0 secs=1 mem_mb=774 MB
+[2026-09-19T06:36:22Z] [iter=1] Resolving target type target_type=extends_clause count=134
+[2026-09-19T06:36:23Z] [iter=1] Target type resolved target_type=extends_clause resolved=134 errors=0 secs=1 mem_mb=774 MB
+[2026-09-19T06:36:27Z] [iter=1] Step 5: Writing final enrichment file triples=45267
+[2026-09-19T06:36:27Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/2f463cf5b0e98a52bc20e348d1e69761bf263b86.nq.gz size_kb=841
+[2026-09-19T06:36:27Z] [iter=1] PHASE END: enrich elapsed_s=559 elapsed_min=9.3 total_triples=45267
