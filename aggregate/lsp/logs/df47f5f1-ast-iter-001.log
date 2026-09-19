@@ -1,0 +1,7 @@
+[2026-09-19T21:10:40Z] === AST ITERATION 1 START | repo=yaml/pyyaml sha=df47f5f1 ===
+[2026-09-19T21:10:40Z] [iter=1] PHASE START: ast repo=yaml/pyyaml sha=df47f5f1
+[2026-09-19T21:10:40Z] [iter=1] Building AST aggregate chunks
+[2026-09-19T21:11:35Z] [iter=1] AST chunks built count=1 triples=711686
+[2026-09-19T21:11:35Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/df47f5f18a247830419bae1d5b43b2bd77a1c0fd/.complete
+[2026-09-19T21:11:35Z] [iter=1] PHASE END: ast elapsed_s=55 elapsed_min=0.9
+[2026-09-19T21:11:35Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json
