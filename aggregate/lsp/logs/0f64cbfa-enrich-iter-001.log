@@ -1,0 +1,31 @@
+[2026-09-19T11:06:12Z] === ENRICH ITERATION 1 START | repo=yaml/pyyaml sha=0f64cbfa ===
+[2026-09-19T11:06:12Z] [iter=1] PHASE START: enrich repo=yaml/pyyaml sha=0f64cbfa runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/0f64cbfa-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/0f64cbfa54b0b22dc7b776b7b98a7cd657e84d78.nq.gz
+[2026-09-19T11:06:12Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-09-19T11:06:18Z] [iter=1] AST store loaded triples=721283 load_secs=6 mem_mb=773 MB
+[2026-09-19T11:06:18Z] [iter=1] Step 2: Finding LSP targets mem_mb=773 MB
+[2026-09-19T11:06:20Z] [iter=1] LSP targets found call_sites=5437 imports=18 extends=104 implements=0 secs=2
+[2026-09-19T11:06:21Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=773 MB
+[2026-09-19T11:06:26Z] [iter=1] Position index built positions=49834 nodes_with_types=63190 secs=4 mem_mb=773 MB
+[2026-09-19T11:06:26Z] [iter=1] Step 3: Starting LSP resolution mem_mb=773 MB already_completed_types=[] already_completed_files=0
+[2026-09-19T11:06:26Z] [iter=1] Resolving target type target_type=call_site count=5437
+[2026-09-19T11:07:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=2 resolved=226 errors=160 current=tests/lib/test_yaml_ext.py
+[2026-09-19T11:08:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.1 files_done=4 resolved=389 errors=359 current=tests/lib3/test_mark.py
+[2026-09-19T11:09:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.1 files_done=7 resolved=501 errors=543 current=tests/lib/test_canonical.py
+[2026-09-19T11:09:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.6 files_done=11 resolved=600 errors=642 current=lib3/yaml/__init__.py
+[2026-09-19T11:10:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.5 files_done=13 resolved=701 errors=814 current=examples/pygments-lexer/yaml.py
+[2026-09-19T11:11:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.4 files_done=15 resolved=829 errors=981 current=lib/yaml/resolver.py
+[2026-09-19T11:12:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.6 files_done=20 resolved=1006 errors=1211 current=lib/yaml/representer.py
+[2026-09-19T11:13:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.2 files_done=22 resolved=1082 errors=1336 current=tests/lib3/test_appliance.py
+[2026-09-19T11:15:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.8 files_done=27 resolved=1320 errors=1659 current=tests/lib/test_emitter.py
+[2026-09-19T11:15:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.5 files_done=33 resolved=1563 errors=1785 current=tests/lib/canonical.py
+[2026-09-19T11:16:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.0 files_done=42 resolved=1839 errors=1889 current=tests/lib/test_constructor.py
+[2026-09-19T11:16:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.6 files_done=48 resolved=2074 errors=1991 current=lib3/yaml/error.py
+[2026-09-19T11:17:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.1 files_done=54 resolved=2112 errors=2086 current=lib/yaml/tokens.py
+[2026-09-19T11:17:42Z] [iter=1] Target type resolved target_type=call_site resolved=2281 errors=2159 secs=677 mem_mb=773 MB
+[2026-09-19T11:17:42Z] [iter=1] Resolving target type target_type=import_statement count=18
+[2026-09-19T11:17:44Z] [iter=1] Target type resolved target_type=import_statement resolved=18 errors=0 secs=1 mem_mb=773 MB
+[2026-09-19T11:17:44Z] [iter=1] Resolving target type target_type=extends_clause count=104
+[2026-09-19T11:17:45Z] [iter=1] Target type resolved target_type=extends_clause resolved=104 errors=0 secs=2 mem_mb=773 MB
+[2026-09-19T11:17:49Z] [iter=1] Step 5: Writing final enrichment file triples=44207
+[2026-09-19T11:17:50Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/0f64cbfa54b0b22dc7b776b7b98a7cd657e84d78.nq.gz size_kb=812
+[2026-09-19T11:17:50Z] [iter=1] PHASE END: enrich elapsed_s=698 elapsed_min=11.6 total_triples=44207
