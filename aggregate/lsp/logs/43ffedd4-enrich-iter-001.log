@@ -1,0 +1,17 @@
+[2026-09-20T04:26:58Z] === ENRICH ITERATION 1 START | repo=yaml/pyyaml sha=43ffedd4 ===
+[2026-09-20T04:26:58Z] [iter=1] PHASE START: enrich repo=yaml/pyyaml sha=43ffedd4 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/43ffedd4-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/43ffedd470a1959438ebfad4145d4074e2ab3292.nq.gz
+[2026-09-20T04:26:58Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-09-20T04:27:05Z] [iter=1] AST store loaded triples=302055 load_secs=7 mem_mb=479 MB
+[2026-09-20T04:27:05Z] [iter=1] Step 2: Finding LSP targets mem_mb=479 MB
+[2026-09-20T04:27:06Z] [iter=1] LSP targets found call_sites=2335 imports=0 extends=0 implements=0 secs=1
+[2026-09-20T04:27:06Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=479 MB
+[2026-09-20T04:27:07Z] [iter=1] Position index built positions=20799 nodes_with_types=26381 secs=1 mem_mb=479 MB
+[2026-09-20T04:27:07Z] [iter=1] Step 3: Starting LSP resolution mem_mb=479 MB already_completed_types=[] already_completed_files=0
+[2026-09-20T04:27:07Z] [iter=1] Resolving target type target_type=call_site count=2335
+[2026-09-20T04:27:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.7 files_done=3 resolved=129 errors=256 current=lib/yaml/resolver.py
+[2026-09-20T04:28:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.3 files_done=6 resolved=370 errors=593 current=lib/yaml/loader.py
+[2026-09-20T04:28:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.8 files_done=30 resolved=814 errors=816 current=tests/test_yaml.py
+[2026-09-20T04:28:46Z] [iter=1] Target type resolved target_type=call_site resolved=817 errors=819 secs=98 mem_mb=479 MB
+[2026-09-20T04:28:48Z] [iter=1] Step 5: Writing final enrichment file triples=16927
+[2026-09-20T04:28:48Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/43ffedd470a1959438ebfad4145d4074e2ab3292.nq.gz size_kb=288
+[2026-09-20T04:28:48Z] [iter=1] PHASE END: enrich elapsed_s=110 elapsed_min=1.8 total_triples=16927
