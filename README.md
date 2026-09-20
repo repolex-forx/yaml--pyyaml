@@ -58,6 +58,8 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 │   │   │   └── chunk-001.nq.gz
 │   │   ├── 41309b0bcb4559edb1d691d47199035ef539d785
 │   │   │   └── chunk-001.nq.gz
+│   │   ├── 43ffedd470a1959438ebfad4145d4074e2ab3292
+│   │   │   └── chunk-001.nq.gz
 │   │   ├── 4808fba18e067a93a4fcc25ddda1aae9b976ceb8
 │   │   │   └── chunk-001.nq.gz
 │   │   ├── 49790e73684bebad1df05ef8d828fa12f685bffb
@@ -137,6 +139,7 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 │   │   ├── 38cb7e2e6b803a534bd28d06132c93243d0761a8.nq.gz
 │   │   ├── 3f96307018244fab5a5c4805626dc7d0b255f591.nq.gz
 │   │   ├── 41309b0bcb4559edb1d691d47199035ef539d785.nq.gz
+│   │   ├── 43ffedd470a1959438ebfad4145d4074e2ab3292.nq.gz
 │   │   ├── 4808fba18e067a93a4fcc25ddda1aae9b976ceb8.nq.gz
 │   │   ├── 49790e73684bebad1df05ef8d828fa12f685bffb.nq.gz
 │   │   ├── 538b5c93f7d5dee40322893c1e524e94a4f8bbde.nq.gz
@@ -191,6 +194,8 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 │       ├── 3f96307018244fab5a5c4805626dc7d0b255f591
 │       │   └── chunk-001.nq.gz
 │       ├── 41309b0bcb4559edb1d691d47199035ef539d785
+│       │   └── chunk-001.nq.gz
+│       ├── 43ffedd470a1959438ebfad4145d4074e2ab3292
 │       │   └── chunk-001.nq.gz
 │       ├── 4808fba18e067a93a4fcc25ddda1aae9b976ceb8
 │       │   └── chunk-001.nq.gz
@@ -325,12 +330,9 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
     ├── 0c21345879b298bb8668201bebe7d289586b17f9.nq.gz
     ├── 0c5cda186dc8f217e04be9ca221e318a61db918a.nq.gz
     ├── 0c873e9e860486a141020de3a1b42d4fd3456345.nq.gz
-    ├── 0c90c05dff9262ee3040e0804df9245fdf693e31.nq.gz
-    ├── 0ca49912bed281bc3c30a7098f41dcd828896203.nq.gz
-    ├── 0ca95142bb715442d0c2c82a7c573a08c4593845.nq.gz
-    └── 0cb482c9e08efc43be7016e3cf03eeea5f0bc356.nq.gz
+    └── 0c90c05dff9262ee3040e0804df9245fdf693e31.nq.gz
 
-94 directories, 200 files
+96 directories, 200 files
 ```
 
 | Directory | What it contains |
